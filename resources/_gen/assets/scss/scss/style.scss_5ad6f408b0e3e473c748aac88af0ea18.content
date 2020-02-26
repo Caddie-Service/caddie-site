@@ -13,7 +13,7 @@
   --white: #ffffff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #1c3ed3;
+  --primary: #000000;
   --secondary: #43454d;
   --success: #28a745;
   --info: #17a2b8;
@@ -50,7 +50,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -132,12 +132,12 @@ sup {
   top: -.5em; }
 
 a {
-  color: #1c3ed3;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: #6a82eb;
+    color: #333333;
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   color: inherit; }
 
@@ -1012,13 +1012,13 @@ mark,
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #bfc9f3; }
+  background-color: #b8b8b8; }
 
 .table-hover .table-primary:hover {
-  background-color: #aab7ef; }
+  background-color: #ababab; }
   .table-hover .table-primary:hover > td,
   .table-hover .table-primary:hover > th {
-    background-color: #aab7ef; }
+    background-color: #ababab; }
 
 .table-secondary,
 .table-secondary > th,
@@ -1200,12 +1200,12 @@ mark,
   vertical-align: text-top !important; }
 
 .bg-primary {
-  background-color: #1c3ed3 !important; }
+  background-color: #000000 !important; }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #1631a6 !important; }
+  background-color: black !important; }
 
 .bg-secondary {
   background-color: #43454d !important; }
@@ -1300,7 +1300,7 @@ button.bg-dark:focus {
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #1c3ed3 !important; }
+  border-color: #000000 !important; }
 
 .border-secondary {
   border-color: #43454d !important; }
@@ -5280,10 +5280,10 @@ button.bg-dark:focus {
   color: #fff !important; }
 
 .text-primary {
-  color: #1c3ed3 !important; }
+  color: #000000 !important; }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #1631a6 !important; }
+  color: black !important; }
 
 .text-secondary {
   color: #43454d !important; }
@@ -5386,7 +5386,7 @@ a.text-dark:hover, a.text-dark:focus {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 32px;
     height: 3px;
-    background-color: #1c3ed3;
+    background-color: #000000;
     border-radius: 3px;
     position: absolute;
     transition-property: transform;
@@ -5435,7 +5435,7 @@ ol {
     flex: 1; }
 
 .header {
-  color: #1c3ed3;
+  color: #000000;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -5613,24 +5613,24 @@ ol {
         font-weight: regular;
         text-transform: uppercase;
         text-decoration: none;
-        color: #1c3ed3; }
+        color: #000000; }
         .main-menu > ul > li > a:hover {
-          background: #1c3ed3;
+          background: #000000;
           color: #ffffff;
           text-decoration: none; }
       .main-menu > ul > li.active > a {
-        background: #1c3ed3;
+        background: #000000;
         text-decoration: none;
         color: #ffffff; }
         .main-menu > ul > li.active > a:hover {
           text-decoration: none;
-          background: #1c3ed3;
+          background: #000000;
           transition: all 225ms ease-in 0s;
           color: #ffffff; }
 
 .main-menu-mobile {
   position: fixed;
-  background: #1c3ed3;
+  background: #000000;
   top: 0;
   left: 0;
   width: 100%;
@@ -5744,7 +5744,7 @@ ul.social {
   .hamburger .hamburger-inner,
   .hamburger .hamburger-inner::before,
   .hamburger .hamburger-inner::after {
-    background: #1c3ed3; }
+    background: #000000; }
   .hamburger .hamburger-inner::after {
     width: 18px;
     right: 0; }
@@ -5756,7 +5756,7 @@ ul.social {
   white-space: nowrap;
   display: inline-block;
   padding: 7px 15px;
-  background: #1c3ed3;
+  background: #000000;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5767,7 +5767,7 @@ ul.social {
   transition: all 0.15s ease; }
   .button:hover {
     color: #fff;
-    background-color: #3d5ce5;
+    background-color: #1a1a1a;
     text-decoration: none; }
 
 .button-white {
@@ -5776,7 +5776,7 @@ ul.social {
   border: 2px solid #fff; }
 
 .title-1 {
-  color: #1c3ed3;
+  color: #000000;
   font-size: 2.4rem;
   line-height: 1.2;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system; }
@@ -5787,7 +5787,7 @@ ul.social {
     color: #222222; }
 
 .title-2 {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
   font-weight: light;
   color: #333333;
   font-size: 2.4rem; }
@@ -5798,7 +5798,7 @@ ul.social {
     display: block; }
 
 .title-3 {
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, -apple-system;
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
   font-weight: 600;
   color: #2b2b39;
   font-size: 1.9rem;
@@ -5826,7 +5826,7 @@ ul.social {
 
 .content p {
   color: #4e4e4e;
-  font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif, -apple-system; }
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system; }
 
 .content h1 {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
@@ -5846,7 +5846,7 @@ ul.social {
     .content h2 {
       line-height: 1.4; } }
 .content h3 {
-  color: #1c3ed3;
+  color: #000000;
   line-height: 1.4;
   font-weight: 200;
   letter-spacing: 1px; }
@@ -5874,7 +5874,7 @@ ul.social {
       padding-top: 200px;
       padding-bottom: 100px; } }
   .intro h1 {
-    color: #1c3ed3;
+    color: #000000;
     font-size: 2.4rem;
     line-height: 1.2;
     font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
@@ -5929,13 +5929,13 @@ ul.social {
     transform: skewY(-5deg); }
 
 .strip-primary-gradient {
-  background-image: linear-gradient(to right, #1c3ed3, #43454d); }
+  background-image: linear-gradient(to right, #000000, #43454d); }
 
 .strip-primary-gradient-top-bottom {
-  background-image: linear-gradient(to bottom, #1c3ed3, #43454d); }
+  background-image: linear-gradient(to bottom, #000000, #43454d); }
 
 .strip-primary {
-  background-color: #1c3ed3; }
+  background-color: #000000; }
 
 .strip-secondary {
   background-color: #43454d; }
@@ -6000,7 +6000,7 @@ ul.social {
         font-size: 0.8rem;
         font-weight: 700; }
       .feature .feature-content p em {
-        color: #1c3ed3;
+        color: #000000;
         font-style: normal; }
 
 .hero-image {
@@ -6030,7 +6030,7 @@ ul.social {
       font-size: 3rem; }
       @media (min-width: 768px) {
         .hero-image .hero-text h1 {
-          font-size: 4rem;
+          font-size: 3.5rem;
           width: 80%; } }
     .hero-image .hero-text h2 {
       font-size: 2.2rem; }
@@ -6038,11 +6038,11 @@ ul.social {
         .hero-image .hero-text h2 {
           font-size: 2.4rem; } }
     .hero-image .hero-text p {
-      font-size: 1.6rem;
+      font-size: 1rem;
       line-height: 1.3; }
       @media (min-width: 768px) {
         .hero-image .hero-text p {
-          font-size: 1.6rem;
+          font-size: 1rem;
           width: 60%; } }
   .hero-image .hero-side-image {
     display: flex;
@@ -6087,7 +6087,7 @@ ul.social {
   background-blend-mode: overlay; }
 
 .bg-primary {
-  background-color: #1c3ed3; }
+  background-color: #000000; }
 
 .bg-secondary {
   background-color: #43454d; }
@@ -6135,7 +6135,7 @@ ul.social {
   .work-summary .work-content {
     flex: 1;
     padding: 20px;
-    border-bottom: 2px solid #1c3ed3; }
+    border-bottom: 2px solid #000000; }
     .work-summary .work-content .work-title {
       font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
       font-size: 1.5rem; }
@@ -6146,7 +6146,7 @@ ul.social {
 .page-work-single h1.title {
   font-size: 3rem;
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif, -apple-system;
-  color: #1c3ed3; }
+  color: #000000; }
 
 .page-work-single .work-image img {
   width: 100%;

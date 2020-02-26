@@ -1,9 +1,9 @@
 ---
-title: 'We Help Business Grow'
+title: 'Build Experiences People Love'
 weight: 1
 background: 'images/kevin-bhagat-461952-unsplash.jpg'
 button: 'Our Work'
 buttonLink: 'work'
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+Our mission is simple — We like to make epic tech for companies we see destined for success. Whether it’s a new startup coming to us with fresh ideas or an established business in a complete jam from a past technology partner, we treat the project like it was our own company. We make technology your strength.
