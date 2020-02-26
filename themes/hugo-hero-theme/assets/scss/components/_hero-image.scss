@@ -1,9 +1,9 @@
 .hero-image {
-  background-size: cover;
+  // background-size: cover;
   background-repeat: no-repeat;
-  // background-position: top center;
+  background-position: right;
   background-blend-mode: overlay;
-  background-color: $primary;
+  // background-color: $primary;
   height: 400px;
   position: relative;
   padding-top: 60px;
@@ -16,9 +16,15 @@
   .row {
     height: inherit;
   }
+  .text-and-image-container {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+  }
   .hero-text {
     flex: 0;
-    color: #ffffff;
+    flex-grow: 1;
+    color: #000000;
     margin: auto 0;
     h1 {
       font-size: 3rem;
