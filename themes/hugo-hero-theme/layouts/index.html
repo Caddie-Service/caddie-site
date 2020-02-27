@@ -23,11 +23,11 @@
 {{ $reusablePages := $headless.Resources.ByType "page" }}
 {{ $reusablePages := sort $reusablePages ".Params.weight" }}
 {{ range first 1 $reusablePages }}
-<div id="home" class="strip bg-cover bg-position-top bg-overlay">
-  <div class="container pt-17 pb-17">
+<div id="home" class="strip">
+  <div class="container pt-8 pt-md-14">
     <div class="row justify-content-center">
       <div class="col-12 col-md-6 text-center">
-        <img src="images/experiences-icon.png">
+        <img class="pb-6" src="images/experiences-icon.png">
         <h2 class="text-primary">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
         <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
@@ -36,6 +36,22 @@
   </div>
 </div>
 {{ end }}
+
+<div id="home" class="strip">
+  <div class="container pt-8 pt-md-14">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="images/device-comp.png" class="img-fluid" width="600px">
+      </div>
+      <div class="col-6 col-lg-6">
+        <img src="images/startups-label.png" class="pb-2">
+        <h2 class="text-primary">Bring your fresh ideas 
+          to market.</h2>
+        <p>Whether you’ve just secured funding and need to build out a minimally viable product or looking build on an existing product, we can be your technology partner. Ask about a reduced rate for startups.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
