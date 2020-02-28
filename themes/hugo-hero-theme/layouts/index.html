@@ -25,7 +25,7 @@
 {{ range first 1 $reusablePages }}
 <div id="home" class="strip">
   <div class="container pt-8 pt-md-14">
-    <div class="row justify-content-center">
+    <div class="row align-items-center justify-content-center">
       <div class="col-12 col-md-6 text-center">
         <img class="pb-6" src="images/experiences-icon.png">
         <h2 class="text-primary">{{ .Title }}</h2>
@@ -37,7 +37,7 @@
 </div>
 {{ end }}
 
-<div id="home" class="strip">
+<div id="startups" class="strip">
   <div class="container pt-8 pt-md-14">
     <div class="row align-items-center">
       <div class="col-lg-6">
@@ -48,6 +48,39 @@
         <h2 class="text-primary">Bring your fresh ideas 
           to market.</h2>
         <p>Whether you’ve just secured funding and need to build out a minimally viable product or looking build on an existing product, we can be your technology partner. Ask about a reduced rate for startups.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="legacy" class="strip">
+  <div class="container pt-8 pt-md-14">
+    <div class="row align-items-center">
+      <div class="col-6 col-lg-6">
+        <img src="images/legacy-label.png" class="pb-2">
+        <h2 class="text-primary">Realign your technology to 
+          your business goals.</h2>
+        <p>Clients come to us when older systems need to be modernized or previous technology partners have done more harm than good. Either way, we are here to help course correct.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/legacy-picture.png" class="img-fluid" width="600px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="legacy" class="strip">
+  <div class="container pt-8 pt-md-14">
+    <div class="row align-items-center justify-content-center" style="height:540px;">
+      
+      <div class="col-5 col-lg-5 h-75 bg-position-center align-items-center justify-content-center" style='background-image: url("images/who-picture.png");'>
+        
+        <h2 class="text-primary">Who we are</h2>
+        
+      </div>
+      
+      <div class="col-5 col-lg-5 offset-1 h-75 bg-position-center text-center my-auto" style='background-image: url("images/how-picture.png");'>
+        <h2 class="text-primary">How we can help</h2>
       </div>
     </div>
   </div>
@@ -76,7 +109,7 @@
 <div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
   <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-8 text-center text-white">
+      <div class="col-12 col-md-8 text-white">
         <h2>{{ .Title }}</h2>
         <p>{{ .Content }}</p>
         <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>

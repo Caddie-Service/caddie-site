@@ -25,7 +25,9 @@
   {{ partial "main-menu-mobile.html" . }}
   <div id="wrapper" class="wrapper">
     {{ partial "header.html" . }}
-    {{ block "main" . }}
+    <div id="content-wrapper" class="content-wrapper">
+      {{ block "main" . }}
+    </div>
     {{ end }}
   </div>
 
