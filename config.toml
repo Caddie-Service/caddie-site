@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Caddie-Service"
+title = "Caddie  Service"
 themesDir = "themes"
 theme = "hugo-hero-theme"
 

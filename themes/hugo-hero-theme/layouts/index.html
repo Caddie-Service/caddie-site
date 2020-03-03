@@ -25,9 +25,9 @@
 {{ range first 1 $reusablePages }}
 <div id="home" class="strip">
   <div class="container pt-8 pt-md-14">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-12 col-md-6 text-center">
-        <img class="pb-6" src="images/experiences-icon.png">
+    <div class="row align-items-center justify-content-center home-feature">
+      <div class="col-12 text-center">
+        <img class="pb-6" id="experiences-icon" src="images/experiences-icon.png">
         <h2 class="text-primary">{{ .Title }}</h2>
         <p>{{ .Content }}</p>
         <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
@@ -40,11 +40,11 @@
 <div id="startups" class="strip">
   <div class="container pt-8 pt-md-14">
     <div class="row align-items-center">
-      <div class="col-lg-6">
-        <img src="images/device-comp.png" class="img-fluid" width="600px">
+      <div class="col-12 col-lg-6">
+        <img id="device-comp" src="images/device-comp.png" class="img-fluid" />
       </div>
-      <div class="col-6 col-lg-6">
-        <img src="images/startups-label.png" class="pb-2">
+      <div class="col-12 col-lg-6">
+        <img id="startups-label" src="images/startups-label.png" class="pb-2">
         <h2 class="text-primary">Bring your fresh ideas 
           to market.</h2>
         <p>Whether you’ve just secured funding and need to build out a minimally viable product or looking build on an existing product, we can be your technology partner. Ask about a reduced rate for startups.</p>
@@ -56,68 +56,48 @@
 <div id="legacy" class="strip">
   <div class="container pt-8 pt-md-14">
     <div class="row align-items-center">
-      <div class="col-6 col-lg-6">
-        <img src="images/legacy-label.png" class="pb-2">
+      <div class="col-12 col-lg-6">
+        <img id="legacy-label" src="images/legacy-label.png" class="pb-2">
         <h2 class="text-primary">Realign your technology to 
           your business goals.</h2>
         <p>Clients come to us when older systems need to be modernized or previous technology partners have done more harm than good. Either way, we are here to help course correct.</p>
       </div>
-      <div class="col-lg-6">
-        <img src="images/legacy-picture.png" class="img-fluid" width="600px">
+      <div class="col-12 col-lg-6">
+        <img id="legacy-picture" src="images/legacy-picture.png" class="img-fluid">
       </div>
     </div>
   </div>
 </div>
 
-<div id="legacy" class="strip">
-  <div class="container pt-8 pt-md-14">
-    <div class="row align-items-center justify-content-center" style="height:540px;">
+<div id="who-how" class="strip">
+  <div class="container pt-8 pt-md-14 pb-8 pb-md-14">
+    <div class="row align-items-center justify-content-between" style="height:540px;">
       
-      <div class="col-5 col-lg-5 h-75 bg-position-center align-items-center justify-content-center" style='background-image: url("images/who-picture.png");'>
+      <div class="col-12 col-md-5 d-flex h-100 bg-cover align-items-center justify-content-center" style='background-image: url("images/who-picture.png"); width:540px;'>
         
-        <h2 class="text-primary">Who we are</h2>
+        <h2 class="text-light">Who we are</h2>
         
       </div>
       
-      <div class="col-5 col-lg-5 offset-1 h-75 bg-position-center text-center my-auto" style='background-image: url("images/how-picture.png");'>
-        <h2 class="text-primary">How we can help</h2>
+      <div class="col-12  col-md-5 d-flex h-100 bg-cover align-items-center justify-content-center" style='background-image: url("images/how-picture.png");'>
+        <h2 class="text-light">How we can help</h2>
       </div>
     </div>
   </div>
 </div>
 
-{{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
-{{if gt (len $services) 0}}
-<div class="container pt-8 pb-8 pb-md-14 pt-md-14">
-  <div class="row justify-content-start">
-    <div class="col-12">
-      <h2 class="text-center mb-3">Our Services</h2>
-    </div>
-    {{ range first 6 (sort $services ".Params.weight") }}
-    <div class="col-12 col-md-4 mb-1">
-      {{ .Render "summary" }}
-    </div>
-    {{ end }}
-    <div class="col-12 text-center">
-      <a class="button button-primary" href="{{ .Site.BaseURL }}services">View All Services</a>
-    </div>
-  </div>
-</div>
-{{end}}
-
-{{ range first 1 (after 1 $reusablePages) }}
-<div id="home" class="strip bg-primary bg-cover bg-position-top bg-overlay" style='background-image: url("{{ .Params.background | relURL }}");'>
-  <div class="container pt-8 pb-8 pb-md-12 pt-md-12">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 text-white">
-        <h2>{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
-        <a class="button button-white" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+<div id="clients" class="strip-primary">
+  <div class="container">
+    <div class="row align-items-center justify-content-center" style="height:300px;">
+      <div class="col-12 col-md-3">
+        <h3 class="text-white">Our Clients</h3>
+      </div>
+      <div class="col-12 col-md-9 align-items-center justify-content-center">
+        <img src="images/client-logos.png">
       </div>
     </div>
   </div>
 </div>
-{{ end }}
 
 {{ end }}
 
