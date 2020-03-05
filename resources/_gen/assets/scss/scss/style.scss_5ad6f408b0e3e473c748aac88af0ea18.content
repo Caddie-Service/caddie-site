@@ -5478,14 +5478,12 @@ ol {
   position: static; }
 
 .footer {
-  background: #000000;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  background: #000000; }
   .footer .footer-inner {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: center; }
     @media (min-width: 576px) {
       .footer .footer-inner {
         justify-content: space-between;
@@ -5505,7 +5503,8 @@ ol {
     font-size: 1.1rem;
     color: #adb5bd;
     font-weight: 300;
-    color: #a0a0a0; }
+    color: #a0a0a0;
+    margin: 10px; }
   .footer ul {
     list-style: none;
     margin: 0;
@@ -6234,6 +6233,9 @@ ul.social {
 #experiences-icon {
   width: 100px; }
 
+#success-icon {
+  width: 100px; }
+
 #device-comp {
   width: 600px; }
 
@@ -6249,5 +6251,20 @@ ul.social {
 .home-feature p {
   font-weight: 300;
   letter-spacing: 0; }
+
+#teeoff-feature-image {
+  width: 540px; }
+
+#teeoff-logo {
+  width: 320px; }
+
+#ezl-feature-image {
+  width: 540px; }
+
+#ezl-logo {
+  width: 200px; }
+
+.work-feature-heading {
+  font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

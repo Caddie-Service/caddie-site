@@ -20,7 +20,7 @@ theme = "hugo-hero-theme"
 
 [[menu.main]]
     name = "Work"
-    url = "/work/"
+    url = "/caddiework/"
     weight = 1
 
 [[menu.main]]

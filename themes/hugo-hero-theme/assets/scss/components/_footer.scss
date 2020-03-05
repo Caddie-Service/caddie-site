@@ -1,12 +1,12 @@
 .footer {
   background: $primary;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
   .footer-inner {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     @include media-breakpoint-up(sm) {
       justify-content: space-between;
       flex-direction: row;
@@ -29,6 +29,7 @@
     color: $gray-500;
     font-weight: $font-weight-light;
     color: $secondary;
+    margin: 10px;
   }
 
   ul {

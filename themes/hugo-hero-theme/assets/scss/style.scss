@@ -139,7 +139,9 @@
 }
 #experiences-icon {
   width: 100px;
-  // height: 98px;
+}
+#success-icon {
+  width: 100px;
 }
 #device-comp {
   width: 600px;
@@ -158,4 +160,19 @@
 .home-feature p {
   font-weight: $font-weight-light;
   letter-spacing: 0;
+}
+#teeoff-feature-image{
+  width: 540px;
+}
+#teeoff-logo{
+  width: 320px;
+}
+#ezl-feature-image{
+  width: 540px;
+}
+#ezl-logo{
+  width: 200px;
+}
+.work-feature-heading {
+  font-weight: $font-weight-bold;
 }
