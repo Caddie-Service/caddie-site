@@ -157,10 +157,34 @@
   width: 600px;
 }
 
-.home-feature p {
-  font-weight: $font-weight-light;
-  letter-spacing: 0;
+.title-feature {
+  > p {
+    font-weight: $font-weight-light;
+    letter-spacing: 0;
+  }
+  > h2 {
+    padding-bottom: 1rem;
+    letter-spacing: 0;
+  }
+  > ul {
+    > li {
+      font-weight: $font-weight-light;
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 10px 0px 13px 50px;
+      list-style: none;
+      background-image: url("/images/check-bullet.png");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 26px
+    }
+  }
+  .list-heading {
+    font-weight: $font-weight-bold;
+  }
 }
+
+
 #teeoff-feature-image{
   width: 540px;
 }
@@ -175,4 +199,13 @@
 }
 .work-feature-heading {
   font-weight: $font-weight-bold;
+}
+#services-icon {
+  width: 72px;
+}
+.hero-info-box {
+  background-color: $white;
+  padding: 15px;
+  font-weight: $font-weight-light;
+  height: 150px;
 }

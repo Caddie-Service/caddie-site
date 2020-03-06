@@ -6248,9 +6248,27 @@ ul.social {
 #legacy-picture {
   width: 600px; }
 
-.home-feature p {
+.title-feature > p {
   font-weight: 300;
   letter-spacing: 0; }
+
+.title-feature > h2 {
+  padding-bottom: 1rem;
+  letter-spacing: 0; }
+
+.title-feature > ul > li {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 10px 0px 13px 50px;
+  list-style: none;
+  background-image: url("/images/check-bullet.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 26px; }
+
+.title-feature .list-heading {
+  font-weight: 700; }
 
 #teeoff-feature-image {
   width: 540px; }
@@ -6266,5 +6284,14 @@ ul.social {
 
 .work-feature-heading {
   font-weight: 700; }
+
+#services-icon {
+  width: 72px; }
+
+.hero-info-box {
+  background-color: #ffffff;
+  padding: 15px;
+  font-weight: 300;
+  height: 150px; }
 
 /*# sourceMappingURL=style.css.map */
