@@ -30,7 +30,7 @@ theme = "hugo-hero-theme"
 
 [[menu.main]]
     name = "About"
-    url = "/about/"
+    url = "/caddieabout/"
     weight = 3
 
 [[menu.main]]

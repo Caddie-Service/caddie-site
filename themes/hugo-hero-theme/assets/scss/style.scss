@@ -204,8 +204,15 @@
   width: 72px;
 }
 .hero-info-box {
+  flex-direction: column;
   background-color: $white;
   padding: 15px;
   font-weight: $font-weight-light;
-  height: 150px;
+}
+#about-icon {
+  width: 100px;
+}
+#spheric-companies {
+  padding-top: 80px;
+  width: 800px;
 }
