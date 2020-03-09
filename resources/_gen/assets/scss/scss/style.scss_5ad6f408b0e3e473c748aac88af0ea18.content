@@ -6301,4 +6301,15 @@ ul.social {
   padding-top: 80px;
   width: 800px; }
 
+@media (max-width: 767.98px) {
+  #who-how {
+    flex-direction: column !important; }
+    #who-how div.row {
+      flex: 1;
+      flex-direction: column !important;
+      height: 100% !important; }
+      #who-how div.row div {
+        min-height: 300px;
+        margin-bottom: 20px; } }
+
 /*# sourceMappingURL=style.css.map */

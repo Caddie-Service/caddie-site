@@ -216,3 +216,25 @@
   padding-top: 80px;
   width: 800px;
 }
+
+
+#who-how {
+
+  @include media-breakpoint-down(sm) {
+    
+    flex-direction: column !important;
+
+    div.row {
+    
+      flex: 1;
+      flex-direction: column !important;
+      height: 100% !important;
+
+      div {
+        min-height: 300px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
