@@ -214,7 +214,7 @@
 }
 
 #service-boxes {
-  @include media-breakpoint-only(sm) {
+  @include media-breakpoint-down(sm) {
     flex-direction: column !important;
     height: 100% !important;
     padding-top: 20px;
