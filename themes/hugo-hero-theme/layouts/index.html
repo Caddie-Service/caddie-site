@@ -29,7 +29,7 @@
       <div class="col-12 text-center">
         <img class="pb-6" id="experiences-icon" src="images/experiences-icon.png">
         <h2 class="text-primary">{{ .Title }}</h2>
-        <p>{{ .Content }}</p>
+        {{ .Content }}
         <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
       </div>
     </div>
