@@ -6233,7 +6233,7 @@ ul.social {
 #experiences-icon {
   width: 100px; }
 
-#success-icon {
+#meter-icon {
   width: 100px; }
 
 #device-comp {
@@ -6245,8 +6245,31 @@ ul.social {
 #legacy-label {
   width: 221px; }
 
-#legacy-picture {
-  width: 600px; }
+.strip {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  @media (max-width: 1299.98px) {
+    .strip {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+  @media (max-width: 767.98px) {
+    .strip {
+      padding-top: 48px;
+      padding-bottom: 48px; } }
+  .strip .strip-side-image {
+    height: 540px;
+    max-width: 540px;
+    width: 100%;
+    object-fit: cover; }
+
+.work-strip {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .work-strip .strip-top-image {
+    height: 540px;
+    max-width: 540px;
+    width: 100%;
+    object-fit: cover; }
 
 .title-feature > p {
   font-weight: 300;
@@ -6267,23 +6290,24 @@ ul.social {
   background-position: left center;
   background-size: 26px; }
 
-.title-feature .list-heading {
+.title-feature .title-feature-heading {
   font-weight: 700; }
-
-#teeoff-feature-image {
-  width: 540px; }
 
 #teeoff-logo {
-  width: 320px; }
-
-#ezl-feature-image {
-  width: 540px; }
+  width: 320px;
+  padding-top: 20px; }
 
 #ezl-logo {
+  padding-top: 20px;
   width: 200px; }
 
-.work-feature-heading {
-  font-weight: 700; }
+#juice-logo {
+  padding-top: 20px;
+  width: 250px; }
+
+#shark-logo {
+  padding-top: 20px;
+  width: 378px; }
 
 #services-icon {
   width: 72px; }
@@ -6345,8 +6369,12 @@ ul.social {
   width: 100px; }
 
 #spheric-companies {
-  padding-top: 80px;
-  width: 800px; }
+  flex-direction: row;
+  padding-top: 20px; }
+  #spheric-companies > img {
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px; }
 
 @media (max-width: 767.98px) {
   #who-how {
@@ -6358,5 +6386,27 @@ ul.social {
       #who-how div.row div {
         min-height: 300px;
         margin-bottom: 20px; } }
+
+#who-we-are {
+  background-image: url("/images/bridge-city.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 540px;
+  width: 100%; }
+
+#how-we-can-help {
+  background-image: url("/images/bridge-sunset.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 540px;
+  width: 100%; }
+
+#we-are-caddie-service {
+  background-image: url("/images/bridge-night.JPG");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top; }
 
 /*# sourceMappingURL=style.css.map */

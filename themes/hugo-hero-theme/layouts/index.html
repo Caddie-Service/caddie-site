@@ -19,23 +19,17 @@
 
 {{ partial "hero-image-fullscreen.html" (dict "image" .Params.heroImgUrl "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "content" .)}}
 
-{{ $headless := .Site.GetPage "/homepage" }}
-{{ $reusablePages := $headless.Resources.ByType "page" }}
-{{ $reusablePages := sort $reusablePages ".Params.weight" }}
-{{ range first 1 $reusablePages }}
 <div id="home" class="strip">
-  <div class="container pt-8 pt-md-14">
+  <div class="container">
     <div class="row align-items-center justify-content-center title-feature">
       <div class="col-12 text-center">
         <img class="pb-6" id="experiences-icon" src="images/experiences-icon.png">
-        <h2 class="text-primary">{{ .Title }}</h2>
-        {{ .Content }}
-        <a class="button" href="{{ .Params.buttonLink | relURL }}">{{ .Params.button }}</a>
+        <h2 class="text-primary">Build Experiences People Love</h2>
+        <p>Our mission is simple — We like to make epic tech for companies we see as destined for success. Whether it’s a new startup coming to us with fresh ideas or an established business in a complete jam from a past technology partner, we treat the project like it was our own company. We make technology your strength.</p>
       </div>
     </div>
   </div>
 </div>
-{{ end }}
 
 <div id="startups" class="strip">
   <div class="container pt-8 pt-md-14">
@@ -72,11 +66,15 @@
 <div id="who-how" class="strip">
   <div class="container pt-8 pt-md-20 pb-8 pb-md-14">
     <div class="row align-items-center justify-content-between" style="height:540px;">
-      <div class="col-12 col-md-5 d-flex h-100 bg-cover align-items-center justify-content-center" style='background-image: url("images/who-picture.png");'>
-        <h2 class="text-light">Who we are</h2>
+      <div class="col-12 col-md-6">
+        <div id="who-we-are" class="d-flex align-items-center justify-content-center">
+          <h2 class="text-light">Who we are</h2>
+        </div>
       </div>
-      <div class="col-12  col-md-5 d-flex h-100 bg-cover align-items-center justify-content-center" style='background-image: url("images/how-picture.png");'>
-        <h2 class="text-light">How we can help</h2>
+      <div class="col-12  col-md-6">
+        <div id="how-we-can-help" class="d-flex align-items-center justify-content-center">
+          <h2 class="text-light">How we can help</h2>
+        </div>
       </div>
     </div>
   </div>
