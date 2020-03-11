@@ -33,11 +33,6 @@ theme = "hugo-hero-theme"
     url = "/caddieabout/"
     weight = 3
 
-[[menu.main]]
-    name = "Get In Touch"
-    url = "/contact/"
-    weight = 4
-
 [permalinks]
   post = "/:year/:month/:day/:slug/"
   pages = "/:filename/"

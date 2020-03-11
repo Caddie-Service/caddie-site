@@ -1,5 +1,5 @@
 // Font
-@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,500,600,700,900|Open+Sans:400,700');
 
 // Bootstrap
 @import 'bootstrap/functions';
@@ -90,10 +90,10 @@
 //     }
 //   }
 // }
-.header .container .main-menu .menu-item-get-in-touch a {
+.header .container .main-menu .menu-item-email a {
   color: #D4AF37 !important;
   margin-left: 60px;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-demi-bold;
 }
 .header .container {
   max-width: 100% !important;
@@ -104,8 +104,9 @@
 .main-menu {
   > ul {
     > li {
-      font-size: 1.2rem !important;
+      font-size: 1.0rem !important;
       > a {
+        text-transform: none !important;
         &:hover {
           background: #ffffff;
           color: $primary;
@@ -143,16 +144,13 @@
 #meter-icon {
   width: 100px;
 }
-#device-comp {
-  width: 600px;
-}
 #startups-label {
   width: 158px;
-  // height: 50px;
 }
 #legacy-label {
   width: 221px;
 }
+
 .strip {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -173,6 +171,22 @@
     width: 100%;
     object-fit: cover;
   }  
+}
+
+#legacy-systems-image {
+  height: 540px;
+  max-width: 540px;
+  width: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+}
+
+#startups-image {
+  height: 540px;
+  max-width: 540px;
+  width: 100%;
+  object-fit: cover;
+  object-position: right bottom;
 }
 
 .work-strip {
@@ -316,6 +330,27 @@
   }
 }
 
+#client-list-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  > img {
+    height: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include media-breakpoint-down(md) {
+      height: 75px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 40px;
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+
+  }
+}
 
 #who-how {
 
