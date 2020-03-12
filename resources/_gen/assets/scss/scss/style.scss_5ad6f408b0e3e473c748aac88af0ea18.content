@@ -5609,7 +5609,7 @@ ol {
 
 .logo-mobile {
   display: block;
-  width: 40px;
+  width: 120px;
   padding: 10px 0 10px 0; }
   @media (min-width: 576px) {
     .logo-mobile {
@@ -6205,6 +6205,10 @@ ul.social {
   margin-left: 20px;
   margin-right: 21px; }
 
+.full-width .container {
+  max-width: 100% !important;
+  margin-left: 0px; }
+
 .main-menu > ul > li {
   font-size: 1.0rem !important; }
   .main-menu > ul > li > a {
@@ -6260,7 +6264,9 @@ ul.social {
     max-width: 540px;
     width: 100%;
     object-fit: cover; }
-
+    @media (max-width: 991.98px) {
+      .strip .strip-side-image {
+        padding-bottom: 20px; } }
 #legacy-systems-image {
   height: 540px;
   max-width: 540px;
