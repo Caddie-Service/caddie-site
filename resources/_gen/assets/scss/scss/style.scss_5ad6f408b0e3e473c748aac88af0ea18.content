@@ -6410,10 +6410,14 @@ ul.social {
   width: 100px; }
 
 #spheric-companies {
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
   padding-top: 20px; }
-  #spheric-companies > img {
-    height: 100px;
+  #spheric-companies > div > img {
+    max-width: 140px;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px; }
 
@@ -6428,7 +6432,6 @@ ul.social {
     @media (max-width: 767.98px) {
       #client-list-logos > div > img {
         width: 100%;
-        object-fit: scale-down;
         padding-left: 5px;
         padding-right: 5px; } }
 @media (max-width: 767.98px) {
