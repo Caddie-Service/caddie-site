@@ -6311,11 +6311,26 @@ ul.social {
 @media (max-width: 1299.98px) {
   .startup-text {
     display: flex;
-    justify-content: center; } }
+    justify-content: left; } }
 
 .startup-text .startup-text-inner {
   max-width: 540px; }
 
+.container-fluid.hug-left {
+  padding-left: 0px; }
+  @media (max-width: 1299.98px) {
+    .container-fluid.hug-left {
+      padding-left: 10px; } }
+#startups-md-down {
+  display: none; }
+  @media (max-width: 991.98px) {
+    #startups-md-down {
+      display: block; } }
+#startups-lg-up {
+  display: none; }
+  @media (min-width: 992px) {
+    #startups-lg-up {
+      display: block; } }
 #startups-image {
   height: 540px;
   max-width: 540px;
@@ -6324,7 +6339,7 @@ ul.social {
   object-position: right bottom; }
   @media (max-width: 991.98px) {
     #startups-image {
-      max-width: 100%;
+      max-width: 95%;
       object-fit: contain; } }
 #legacy-systems-image {
   height: 540px;

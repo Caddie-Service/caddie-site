@@ -246,11 +246,32 @@
 .startup-text {
   @include media-breakpoint-down(lg) {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   .startup-text-inner{
     @extend .title-feature;
     max-width: 540px;
+  }
+}
+.container-fluid {
+  &.hug-left {
+    padding-left: 0px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 10px;
+    }
+  }
+}
+#startups-md-down{
+  display: none;
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+}
+
+#startups-lg-up{
+  display: none;
+  @include media-breakpoint-up(lg) {
+    display: block;
   }
 }
 
@@ -261,7 +282,7 @@
   object-fit: cover;
   object-position: right bottom;
   @include media-breakpoint-down(md) {
-    max-width: 100%;
+    max-width: 95%;
     object-fit: contain;
   }
 }
