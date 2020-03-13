@@ -180,21 +180,17 @@
   
   }  
 }
-
-#legacy-systems-image {
-  height: 540px;
+#hero-image-laptop {
   max-width: 540px;
   width: 100%;
-  object-fit: cover;
-  object-position: left bottom;
-}
+  object-fit: scale-down;
+  @include media-breakpoint-down(md) {
+    max-width: 440px;
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 288px;
+  }
 
-#startups-image {
-  height: 540px;
-  max-width: 540px;
-  width: 100%;
-  object-fit: cover;
-  object-position: right bottom;
 }
 
 .work-strip {
@@ -212,7 +208,7 @@
   > p {
     font-weight: $font-weight-light;
     letter-spacing: 0;
-    width: 540px;
+    max-width: 540px;
     display: inline-block;
   }
   > h2 {
@@ -237,6 +233,40 @@
   }
 }
 
+.startup-text {
+  @include media-breakpoint-down(lg) {
+    display: flex;
+    justify-content: center;
+  }
+  .startup-text-inner{
+    @extend .title-feature;
+    max-width: 540px;
+  }
+}
+
+#startups-image {
+  height: 540px;
+  max-width: 540px;
+  width: 100%;
+  object-fit: cover;
+  object-position: right bottom;
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+#legacy-systems-image {
+  height: 540px;
+  max-width: 540px;
+  width: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
 
 #teeoff-logo{
   width: 320px;

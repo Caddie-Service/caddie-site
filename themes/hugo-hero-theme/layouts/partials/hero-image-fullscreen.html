@@ -1,16 +1,19 @@
 
 <div class="hero-image hero-image-fullscreen">
     <div class="container ">
-      <div class="text-and-image-container">
-        <div class="hero-text title-feature">
+      <div class="row  flex-sm-row-reverse hero-row">
+        <div class="col-12 col-md-6 hero-side-image">
+          <img src={{ .image }} id="hero-image-laptop"/>
+        </div>
+
+        <div class="col-12 col-md-6 hero-text title-feature">
           <span class="hero-section">{{ .section }}</span>
           <h1>WE ARE<br/>CADDIE SERVICE.</h1>
           <p>We’re a design-driven development agency led by a team of world-class developers, designers and consultants.</p>
         </div>
-        <div class="hero-side-image">
-          <img src={{ .image }} class="img-fluid" width="600"/>
-        </div>
+      
       </div>
+      <!--
       <div class="hero-down">
         <a href="#home">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60">
@@ -20,6 +23,8 @@
           </svg>
         </a>
       </div>
+       -->
     </div>
+    
   </div>
   {{ .Site.BaseURL }}
