@@ -5500,7 +5500,7 @@ ol {
         margin: 0;
         flex: 0 0 120px; } }
   .footer p {
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     color: #adb5bd;
     font-weight: 300;
     color: #a0a0a0;
@@ -5584,8 +5584,6 @@ ol {
           height: 40px;
           padding: 10px 0 10px 8px;
           font-weight: bold;
-          color: #ffffff; }
-        .sub-footer .sub-footer-inner ul li.zerostatic a {
           color: #ffffff; }
       @media (min-width: 576px) {
         .sub-footer .sub-footer-inner ul li {
