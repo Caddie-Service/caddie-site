@@ -6278,6 +6278,10 @@ ul.social {
     width: 100%;
     object-fit: cover; }
 
+@media (max-width: 991.98px) {
+  .title-feature.first-in-stack, .startup-text .first-in-stack.startup-text-inner {
+    padding-bottom: 120px; } }
+
 .title-feature > p, .startup-text .startup-text-inner > p {
   font-weight: 300;
   letter-spacing: 0;
@@ -6445,6 +6449,9 @@ ul.social {
   background-position: right bottom;
   height: 540px;
   width: 100%; }
+  #who-we-are:hover {
+    text-decoration: none;
+    opacity: 0.8; }
 
 #how-we-can-help {
   background-image: url("/images/bridge-sunset.jpg");
@@ -6453,6 +6460,9 @@ ul.social {
   background-position: right bottom;
   height: 540px;
   width: 100%; }
+  #how-we-can-help:hover {
+    text-decoration: none;
+    opacity: 0.8; }
 
 #we-are-caddie-service {
   background-image: url("/images/bridge-night.JPG");
