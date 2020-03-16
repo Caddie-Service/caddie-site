@@ -8,15 +8,16 @@ theme = "hugo-hero-theme"
   google_analytics_id=""
 
   [params.homepage_meta_tags]
-    meta_description = "Caddie"
-    meta_og_title = "Caddie"
+    meta_description = "We’re a design-driven development agency led by a team of world-class developers, designers and consultants."
+    meta_og_title = "Caddie Service Development Agency"
     meta_og_type = "website"
-    meta_og_url = "https://example.com.com"
-    meta_og_image = ""
-    meta_og_description = ""
-    meta_twitter_card = "summary"
-    meta_twitter_site = ""
-    meta_twitter_creator = ""
+    meta_og_url = "https://caddieservice.co"
+    meta_og_image = "https://caddieservice.co/images/caddieservice-logo.png"
+    meta_og_description = "We’re a design-driven development agency led by a team of world-class developers, designers and consultants."
+    
+    meta_twitter_card = "We’re a design-driven development agency led by a team of world-class developers, designers and consultants."
+    meta_twitter_site = "@caddieservice"
+    meta_twitter_creator = "@caddieservice"
 
 [[menu.main]]
     name = "Work"

@@ -98,7 +98,19 @@
 .footer-email{
   color: #D4AF37;
   font-weight: $font-weight-demi-bold;
+  margin-right: 35px;
+  @include media-breakpoint-down(sm) {
+    margin-right: 0px;
+  }
 }
+.footer-email-column{
+  display: flex;
+  justify-content: flex-end;
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+  }
+}
+
 .header .container {
   max-width: 100% !important;
   margin-left: 20px;
@@ -215,17 +227,17 @@
     }  
   }
 
-  > p {
+  p {
     font-weight: $font-weight-light;
     letter-spacing: 0;
     max-width: 540px;
     display: inline-block;
   }
-  > h2 {
+  h2 {
     padding-bottom: 1rem;
     letter-spacing: 0;
   }
-  > ul {
+  ul {
     > li {
       font-weight: $font-weight-light;
       font-size: 1.1rem;
@@ -256,7 +268,7 @@
 .container-fluid {
   &.hug-left {
     padding-left: 0px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(md) {
       padding-left: 10px;
     }
   }
@@ -276,44 +288,58 @@
 }
 
 #startups-image {
-  height: 540px;
+  height:540px;
   max-width: 540px;
   width: 100%;
   object-fit: cover;
   object-position: right bottom;
   @include media-breakpoint-down(md) {
+    height: 100%;
     max-width: 95%;
     object-fit: contain;
   }
 }
 
 #legacy-systems-image {
-  height: 540px;
+  height:540px;
   max-width: 540px;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: left bottom;
   @include media-breakpoint-down(md) {
-    max-width: 100%;
+    height:100%;
+    max-width: 95%;
     object-fit: contain;
   }
 }
 
 #teeoff-logo{
-  width: 320px;
+  max-width: 320px;
   padding-top: 20px;
+  padding-bottom: 70px;
+  width: 100%; 
+  object-fit: scale-down; 
+
 }
 #ezl-logo{
   padding-top: 20px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%; 
+  object-fit: scale-down; 
 }
 #juice-logo{
   padding-top: 20px;
-  width: 250px;  
+  max-width: 250px;  
+  width: 100%; 
+  object-fit: scale-down; 
 }
 #shark-logo{
   padding-top: 20px;
-  width: 378px;  
+  padding-bottom: 7px;
+  max-width: 378px;
+  width: 100%; 
+  object-fit: scale-down; 
 }
 
 #services-icon {
@@ -473,8 +499,14 @@
 }
 #we-are-caddie-service {
   background-image: url("/images/bridge-night.JPG");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top; 
+  background-position: center center; 
+  #we-are-caddie-service-text {
+    padding-top: 50px;
+    padding-bottom: 35px;
+    width: 80%;
+    background: rgba(25, 25, 25, .5);
+  }
 }
 
