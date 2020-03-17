@@ -204,6 +204,7 @@
     max-width: 440px;
   }
   @include media-breakpoint-down(sm) {
+    max-height: 200px;
     max-width: 288px;
   }
 
