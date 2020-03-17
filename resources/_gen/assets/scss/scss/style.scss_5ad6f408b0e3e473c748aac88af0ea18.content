@@ -6279,6 +6279,7 @@ ul.social {
       max-width: 440px; } }
   @media (max-width: 767.98px) {
     #hero-image-laptop {
+      max-height: 200px;
       max-width: 288px; } }
 .work-strip {
   padding-top: 60px;
