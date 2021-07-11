@@ -8,11 +8,15 @@ body {
   height: 100%;
   font-family: 'Source Code Pro', monospace;
   margin: 0;
-  
 }
 
-a, a:active, a:hover, a:visited {
+a, a:active, a:visited {
+  color: #fff;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -70,6 +74,7 @@ header .about-content {
   font-size: .875rem;
   font-weight: 600;
   line-height: 1.5rem;
+  padding-left: 10px;
   border-radius: 20px;
   font-family: 'Source Code Pro', monospace;
   cursor: pointer;
@@ -136,4 +141,52 @@ header .about-content {
   text-transform: uppercase;
   color: #fff;
   margin: 1.5rem 0;
+}
+
+#chromaflair {
+  background: linear-gradient(
+    110deg, 
+    #ff355e,
+    #ffff66,
+    #fd5b78,
+    #50bfe6,
+    #ff9933,
+    #ffcc33,
+    #ff6037,
+    #ccff00,
+    #ff00cc,
+    #66ff66,
+    #ff6eff,
+    #aaf0d1,
+    #ee34d2,
+    #ff3855,
+    #ff9966,
+    #fd3a4a,
+    #9c51b6,
+    #fa5b3d,
+    #a7f432,
+    #fb4d46,
+    #9cd393
+    );
+  background-size: 3000% 3000%;
+
+  -webkit-animation: chromaflair 120s ease infinite;
+  -moz-animation: chromaflair 120s ease infinite;
+  animation: chromaflair 120s ease infinite;
+}
+
+@-webkit-keyframes chromaflair {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100%{ background-position: 0% 50% }
+}
+@-moz-keyframes chromaflair {
+  0% { background-position:0% 50% }
+  50% { background-position:100% 50% }
+  100% { background-position:0% 50% }
+}
+@keyframes chromaflair {
+  0% { background-position:0% 50% }
+  50% { background-position:100% 50% }
+  100% { background-position:0% 50% }
 }
