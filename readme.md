@@ -1,5 +1,3 @@
 Setup
 
-brew install hugo
-hugo server
-http://localhost:1313/ 
+Static site... just move the files over
